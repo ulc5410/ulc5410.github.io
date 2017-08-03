@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta name="description" content="Cloudpe website testing">
+    <meta name="author" content="Charles Chou">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  <!-- #use per IE standards 6-11 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- #improve mobile experience -->
+	<!-- #browser favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+
+    <title>瑩端數位 - News</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+	<link href="/assets/css/w3.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+    <body>
+        <!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><!--toggle @media (min-width: 768px)  -->
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a id="brand-picture" class="navbar-brand" href="/">  <!--left-top picture -->
+        <img alt="瑩端數位" src="/assets/img/cloudpe.png">
+      </a>   
+	  <a id="brand-name" class="navbar-brand" href="/">瑩端數位</a>
+    </div> <!--navbar-header -->
+    <div class="navbar-collapse collapse navbar-right">
+      <ul class="nav navbar-nav">
+        <!-- <li ><a href="/">首頁</a></li><!--Home --> -->
+        <li class="dropdown"> <!--關於瑩端 -->
+		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">關於瑩端</a>
+		  <ul class="dropdown-menu" >
+			  <li><a href="/pages/about">公司簡介</a></li>
+			  <li><a href="/pages/services">經營項目</a></li>
+			  <li><a href="/pages/news">最新消息</a></li>
+		  </ul>
+		</li>
+		<li class="dropdown"><!--行動線上會議 -->
+		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">行動線上會議</a>
+		  <ul class="dropdown-menu">
+			  <li><a href="#">產品簡介</a></li>
+			  <li><a href="#">功能特色</a></li>
+			  <li><a href="#">相關硬體</a></li>
+			  <li><a href="#">應用情境</a></li>
+		  </ul>
+		</li>
+		<li class="dropdown"><!--錄播教學系統 -->
+		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">錄播教學系統</a>
+		  <ul class="dropdown-menu">
+			  <li><a href="#">產品簡介</a></li>
+			  <li><a href="#">提供服務</a></li>
+			  <li><a href="#">成功案例</a></li>
+			  <li><a href="#">展示洽詢</a></li>
+		  </ul>
+		</li>
+        <li ><a href="/pages/contact">聯絡瑩端</a></li><!--聯絡瑩端 -->
+      </ul>
+    </div><!--/.nav-collapse -->
+
+  </div><!--container -->
+</div>
+
+            <div id="blue">
+    <div class="container">
+        <div class="row">
+            <h3>News</h3>
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /blue -->
+
+    <div class="container mb">
+  <div class="col-lg-10 text">
+	<h4>最新消息</h4>
+	<button onclick="accordion('news5')" class="accordion w3-btn w3-block w3-grey w3-left-align">2016-11-23 瑩端數位與臺大計資中心產學合作成功開發e化會議管理系統Cloudpe-Meet</button>
+	<div id="news5" class="w3-container w3-hide">
+	  <p>
+		瑩端數位股份有限公司與國立臺灣大學計算機及資訊網路中心產學合作成功開發出一套「e化會議管理系統Cloudpe-Meet」，支援多項蓬勃成長的會議與學習需求。
+		國立臺灣大學歷年來作育英才無數，同時也不斷致力於提升行政與教學品質及效率，全校師生在有限的資源下，將研究與教學成果最大最佳化。基於此項需求，臺大計算機及資訊網路中心與瑩端數位股份有限公司合作，共同開發出便利教職員生校內外雲端溝通、會議、教學與協同合作的系統。
+		「e化會議管理系統」包含三個子系統：「會議管理系統」、「視訊會議系統」以及「遠距輔助教學系統」，結合臺大的單一認證系統(SSO)，所有使用者登入後即可使用，不需額外帳密登入；同時也與臺大的雲端儲存空間無縫接軌，讓檔案的分享與存取能夠達成全面自動化的管理目標。
+		<br>網址連結：<a href="https://my.ntu.edu.tw/">https://my.ntu.edu.tw/</a>&nbsp; &nbsp;前往<a href="#">台大新聞稿</a>    
+	  </p>
+	</div>
+	<button onclick="accordion('news4')" class="accordion w3-btn w3-block w3-grey w3-left-align">2015-01-29 平面媒體報導 | 瑩端數位解決方案 犀利</button>
+	<div id="news4" class="w3-container w3-hide">
+	  <p>
+		記者 / 王奕勛<br>
+		在全球大環境的激烈變化下，各國欲維持國家經濟與競爭力的成長，皆認定教育為經濟成長的重要元素，故各國相繼大力投資推動各種先進的數位教學模式，如MOOCs（磨課師），Flipped Classroom（翻轉教室），Blended Learning（混合式學習）等。而教育環境在科技進步、網路環境普遍升級情形下，提升師生基本教學設備進而改進「教」與「學」模式就變得相當重要。
+		瑩端數位業務副總經理戴建中表示，該公司已將數位內容、網路與硬體設備完成了系統整合，提供了學校及企業完整的解決方案。目前瑩端數位有兩個完整的產品線供應市場的需求：1.視訊會議系統Cloudpe-Meet：除了一般視訊系統的功能之外，還支援遠距即時互動的教學。電腦上除了免程式安裝（Web版）以外，也支援平板、手機等行動裝置以App方式進行遠距教學，此外，最值得注意的是它還提供了一些特別的功能以支援無紙教學的特殊應用。2.錄製播放管理系統Cloudpe-Lecture：提供課程從錄製、剪輯、播放到平台管理的完整系統，使用者不但可以節省時間及費用也解決了在格式、介面及整合上的不方便性，進而達到教學更有效率、學習成效更提升的境界。
+		Lecture系統在功能上不但提供遠端監控、遠端操作、時段排程等自動化功能，也提供網路直播、使用者帳密管理、學習紀錄討論的功能，同時錄製及播放都可支援到多視頻流及最高解析度（1080p）的需求，且能在錄製檔案中可建立標籤、標記重點，使檔案編輯及學生觀看、反覆複習及事先預習都能達到事半功倍效果。
+		戴建中說，該公司產品在台灣已有超過30家以上的大學、中小學及企業使用、未來會朝加強校際合作交流、經驗分享，以開拓學生的學習視野。
+		<br>新聞網址連結：<a href="https://my.ntu.edu.tw/">http://www.chinatimes.com/newspapers/20150129000373-260210</a>
+	  </p>
+	</div>
+	<button onclick="accordion('news3')" class="accordion w3-btn w3-block w3-grey w3-left-align">2015-01-22 Cloudpe-Meet 與其他主要業者比較</button>
+	<div id="news3" class="w3-container w3-hide">
+      <div class="col-lg-4">
+	    <div class="panel panel-default">
+		  <div class="panel-heading">
+			<p>與Line相較，Cloudpe-Meet優點</p>
+		  </div>
+		  <div class="panel-body">
+		    <ul>
+			  <li>企業群組</li>
+			  <li>語音與通話品質佳</li>
+			  <li>多點語音與視訊會議</li>						  
+			  <li>虛擬專線，資安與安全</li>						  
+			  <li>提供賣斷方案, 企業擁有自己的伺服器</li>		
+			  <li>協同工具：互動式電子白板、桌面共享、快照與錄影</li>
+			  <li>可針對特定需求客製化與合作</li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-lg-4">
+	    <div class="panel panel-default">
+		  <div class="panel-heading">
+			<p>與Skype相較，Cloudpe-Meet優點</p>
+		  </div>
+		  <div class="panel-body">
+		    <ul>
+			  <li>企業群組</li>
+			  <li>虛擬專線，資安與安全</li>
+			  <li>簡單建立多點行動語音與視訊會議</li>						  
+			  <li>提供賣斷方案，企業擁有自己的伺服器</li>						  
+			  <li>協同工具：互動式電子白板、行動桌面共享、快照與錄影</li>		
+			  <li>可針對特定需求客製化與合作</li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-lg-4">
+	    <div class="panel panel-default">
+		  <div class="panel-heading">
+			<p>與Zoom相較，Cloudpe-Meet優點</p>
+		  </div>
+		  <div class="panel-body">
+		    <ul>
+			  <li>訊息功能</li>
+			  <li>企業群組與安全</li>
+			  <li>任何使用者皆可輕鬆建立多點語音與視訊會議</li>						  
+			  <li>提供賣斷方案，企業擁有自己的伺服器</li>						  
+			  <li>可針對特定需求客製化與合作</li>		
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<button onclick="accordion('news2')" class="accordion w3-btn w3-block w3-grey w3-left-align">2013-12-09 Cloudpe-Lecture 榮獲 2013 年資訊月百大創新產品獎殊榮</button>
+	<div id="news2" class="w3-container w3-hide">
+	  <img class="award" src="/assets/img/award_1.png" class="img-responsive"/>
+	  <p> 
+	  	2013 Innovation Product Award
+	    瑩端數位自主研發之 Cloudpe-Lecture（雲端視頻錄播教學解決方案）今年度榮獲得資訊月「創新數位化教育設備類別」百大創新產品獎！此次獲得獎項，代表本公司優良的設計與品質深受評審青睞。百大創新產品獎是經各專家嚴謹審慎的評選作業，而本公司設計開發完成的 Cloudpe-Lecture，兼具創新、成本效率與符合未來線上教育學習市場需求等特性，因此得以在此次評選中脫穎而出。
+		「本公司相當榮幸於2013年獲得創新數位化教育設備類別百大創新產品獎！我們一直以來致力於為數位學習領域提供創新應用服務與完整解決方案，此獎項對我們研發團隊是一項重要的肯定與鼓勵」瑩端數位總經理說道。
+		Cloudpe-Lecture 其人性化設計、優異效能與創新應用是提供數位學習新浪潮下的一套完美視頻教學管理解決方案。
+	  </p>
+	</div>
+	<button onclick="accordion('news1')" class="accordion w3-btn w3-block w3-grey w3-left-align">2013-05-30 瑩端數位「開放課程錄製平台」研討會</button>
+	<div id="news1" class="w3-container w3-hide">
+	  <p>
+		瑩端數位於5月30日下午兩點在淡江大學台北校園舉辦「開放課程錄製平台」研討會，邀請到淡江大學校長張家宜、淡江大學行政副校長高柏園、考用出版公司總經理何頂立等出席。
+		瑩端數位董事長盧昆瑞（淡江大學電機系校友）提供 Cloudpe-Lecture 智慧型錄播管理系統回饋母校製播數位課程，於今日舉辦捐贈儀式，張校長頒發感謝狀時表示：「盧崑瑞校友對電機系校友會、學校活動支持不遺餘力，近日更致贈此設備，提供全校師生優良的教學環境；該系統將於下學年錄製10餘種語言，給予學生另一個學習平臺。」
+		瑩端數位郭警文協理介紹及展示瑩端數位智慧型錄播管理系統──Cloudpe-Lecture，分享錄播管理系統的實際使用經驗，席間並展示公司各項產品，瑩端數位之同仁與賓客相談甚歡，場面熱鬧。
+	  </p>
+	</div>
+  </div>
+</div>
+
+<script>
+function accordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+        <div id="footerwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>About</h4>
+                <div class="hline-w"></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+            <div class="col-lg-4">
+                <h4>Social Links</h4>
+                <div class="hline-w"></div>
+                <p>
+                    
+                        <a href="" class="btn-social btn-outline">
+                          <i class="fa fa-dribbble" aria-hidden="true"></i>
+                          <span class="sr-only">dribbble</span>
+                        </a>
+                    
+                        <a href="" class="btn-social btn-outline">
+                          <i class="fa fa-facebook" aria-hidden="true"></i>
+                          <span class="sr-only">facebook</span>
+                        </a>
+                    
+                        <a href="" class="btn-social btn-outline">
+                          <i class="fa fa-twitter" aria-hidden="true"></i>
+                          <span class="sr-only">twitter</span>
+                        </a>
+                    
+                        <a href="" class="btn-social btn-outline">
+                          <i class="fa fa-instagram" aria-hidden="true"></i>
+                          <span class="sr-only">instagram</span>
+                        </a>
+                    
+                        <a href="" class="btn-social btn-outline">
+                          <i class="fa fa-tumblr" aria-hidden="true"></i>
+                          <span class="sr-only">tumblr</span>
+                        </a>
+                    
+                </p>
+            </div>
+            <div class="col-lg-4">
+                <h4>Our Bunker</h4>
+                <div class="hline-w"></div>
+                <p>
+                    
+                        台灣台北總公司 <br>
+                    
+                        台北市松山區復興北路167號7樓之4 <br>
+                    
+                         <br>
+                    
+                </p>
+            </div>
+        </div><!--/row -->
+    </div><!--/container -->
+	<div id="more-info" class="container">
+	    <ul class="copyright">
+            <li><a href="#">人才招募</a></li>
+            <li><a href="#">隱私權政策</a></li>
+            <li><a href="#">服務條款</a></li>
+        </ul>
+      <p>&copy; 2017 Cloudpe Inc. All Rights Reserved</p>
+	</div><!--/container -->
+</div><!--/footerwrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+
+<!-- <script src="/assets/js/retina-1.1.0.js"></script> -->
+
+<script src="/assets/js/jquery.hoverdir.js"></script>
+<script src="/assets/js/jquery.hoverex.min.js"></script>
+<script src="/assets/js/jquery.prettyPhoto.js"></script>
+<script src="/assets/js/jquery.isotope.min.js"></script>
+<script src="/assets/js/custom.js"></script>
+<script src="/assets/js/slideshow.js"></script>
+
+<script>
+// Portfolio
+(function($) {
+	"use strict";
+	var $container = $('.portfolio'),
+		$items = $container.find('.portfolio-item'),
+		portfolioLayout = 'fitRows';
+		
+		if( $container.hasClass('portfolio-centered') ) {
+			portfolioLayout = 'masonry';
+		}
+				
+		$container.isotope({
+			filter: '*',
+			animationEngine: 'best-available',
+			layoutMode: portfolioLayout,
+			animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false
+		},
+		masonry: {
+		}
+		}, refreshWaypoints());
+		
+		function refreshWaypoints() {
+			setTimeout(function() {
+			}, 1000);   
+		}
+				
+		$('nav.portfolio-filter ul a').on('click', function() {
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ filter: selector }, refreshWaypoints());
+				$('nav.portfolio-filter ul a').removeClass('active');
+				$(this).addClass('active');
+				return false;
+		});
+		
+		function getColumnNumber() { 
+			var winWidth = $(window).width(), 
+			columnNumber = 1;
+		
+			if (winWidth > 1200) {
+				columnNumber = 5;
+			} else if (winWidth > 950) {
+				columnNumber = 4;
+			} else if (winWidth > 600) {
+				columnNumber = 3;
+			} else if (winWidth > 400) {
+				columnNumber = 2;
+			} else if (winWidth > 250) {
+				columnNumber = 1;
+			}
+				return columnNumber;
+			}       
+			
+			function setColumns() {
+				var winWidth = $(window).width(), 
+				columnNumber = getColumnNumber(), 
+				itemWidth = Math.floor(winWidth / columnNumber);
+				
+				$container.find('.portfolio-item').each(function() { 
+					$(this).css( { 
+					width : itemWidth + 'px' 
+				});
+			});
+		}
+		
+		function setPortfolio() { 
+			setColumns();
+			$container.isotope('reLayout');
+		}
+			
+		$container.imagesLoaded(function () { 
+			setPortfolio();
+		});
+		
+		$(window).on('resize', function () { 
+		setPortfolio();          
+	});
+})(jQuery);
+</script>
+    </body>
+</html>
