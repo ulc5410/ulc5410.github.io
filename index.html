@@ -44,24 +44,25 @@
         <li class="dropdown"> <!--關於瑩端 -->
 		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">關於瑩端</a>
 		  <ul class="dropdown-menu" >
-			  <li><a href="/pages/about">公司簡介</a></li>
-			  <li><a href="/pages/services">經營項目</a></li>
-			  <li><a href="/pages/news">最新消息</a></li>
+			  <li><a href="/pages/aboutus/about">公司簡介</a></li>
+			  <li><a href="/pages/aboutus/services">經營項目</a></li>
+			  <li><a href="/pages/aboutus/news">最新消息</a></li>
 		  </ul>
 		</li>
 		<li class="dropdown"><!--行動線上會議 -->
 		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">行動線上會議</a>
 		  <ul class="dropdown-menu">
-			  <li><a href="#">產品簡介</a></li>
+			  <li><a href="/pages/Meet/Meet_about" | prepend: site.baseurl ">產品簡介</a></li>
 			  <li><a href="#">功能特色</a></li>
-			  <li><a href="#">相關硬體</a></li>
-			  <li><a href="#">應用情境</a></li>
+			  <li><a href="/pages/Meet/Meet_scenario" | prepend: site.baseurl ">應用情境</a></li>
+			  <li><a href="/pages/Meet/hardware">相關硬體</a></li>
 		  </ul>
 		</li>
 		<li class="dropdown"><!--錄播教學系統 -->
 		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">錄播教學系統</a>
 		  <ul class="dropdown-menu">
-			  <li><a href="#">產品簡介</a></li>
+			  <li><a href="#">Lecture錄播系統</a></li>
+			  <li><a href="#">MOOC課程平台</a></li>
 			  <li><a href="#">提供服務</a></li>
 			  <li><a href="#">成功案例</a></li>
 			  <li><a href="#">展示洽詢</a></li>
@@ -70,7 +71,6 @@
         <li ><a href="/pages/contact">聯絡瑩端</a></li><!--聯絡瑩端 -->
       </ul>
     </div><!--/.nav-collapse -->
-
   </div><!--container -->
 </div>
 
@@ -87,7 +87,6 @@
 	    <span class="dot" onclick="currentSlide(3)"></span>
 	  </div>
 	</div>
-	
 </div> <!-- /slideshow -->
 <div id="cwrap">
     <div class="container">
@@ -169,8 +168,8 @@
             </div>
         </div><!--/row -->
     </div><!--/container -->
-	<div id="more-info" class="container">
-	    <ul class="copyright">
+	<div  class="container centered">
+	    <ul id="more-info" class="copyright">
             <li><a href="#">人才招募</a></li>
             <li><a href="#">隱私權政策</a></li>
             <li><a href="#">服務條款</a></li>
