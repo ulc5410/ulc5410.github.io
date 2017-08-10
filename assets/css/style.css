@@ -81,9 +81,14 @@ a:focus {
 }
 
 .centered {
-	text-align: center
+	text-align: center;
 }
-
+._right{
+	text-align: right;
+}
+._inline_block{
+	display:inline-block;
+}
 .text{
   margin-left: 6%;
   margin-right:6%;
@@ -98,6 +103,9 @@ a:focus {
 }
 .bold{
 	font-weight:bold;
+}
+.float_right{
+	float:right;
 }
 /*	################################################################
 	BOOTSTRAP MODIFICATIONS & TWEAKS
@@ -128,8 +136,25 @@ a:focus {
 	font-weight: 500;
 	font-size: 20px;
 }
-#more-info{
-	margin-left: -2em;
+
+#_copyright{
+	color: #fff;
+	margin-left:2em;
+}
+#language{
+	margin-left: 0em;
+	color:#fff;
+}
+#language li{
+	margin-left:1em;
+	display:inline-block; 
+}
+#language li a{
+	/* color:lightblue; */
+	text-decoration: underline
+}
+.copyright{
+	margin-left: 0em;
 }
 .copyright li{
 	border-left: solid 1px #d4d4d4;
@@ -673,13 +698,13 @@ a.anchor{
 
 /* dropdown inline list */
 .dropbtn {
-	color:#384452;
+	/* color:#384452; */
     cursor: pointer;
 }
 
 .dropdown{
     position: relative;
-    /* display: block; */
+    /* display: block;  */
 }
 
 .dropdown-content {
@@ -690,14 +715,11 @@ a.anchor{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-#meet_feature{
-	min-width: 500px;
-	left: -100px;
-}
+
 .dropdown-content a {
     color: black;
     text-decoration: none;
-    display: inline-block;
+    display: block;
 	font-size:1em;
 	margin:2px;
 }
@@ -707,7 +729,13 @@ a.anchor{
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
+#meet_feature{
+	min-width: 500px;
+	left: -100px;
+}
+#multi_lang{
+	min-width: 25px;
+}
 /* features 1-12*/
 .features_pic{
 	width:180px;
@@ -724,4 +752,12 @@ a.anchor{
 	padding:40px;
 	border:2px white solid;
 	float:left;
+}
+
+#lang_globe{
+	/* margin-top:16px; */
+	/* margin-right:10px; */
+	padding-left:8px; 
+	color: #00a8ec;
+	min-width:30px;
 }
