@@ -42,15 +42,16 @@
       <ul class="nav navbar-nav">
         <!-- <li ><a href="/">首頁</a></li><!--Home --> -->
         <li class="dropdown"> <!--關於瑩端 -->
-		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us</a>
+		  <a class="dropdown-toggle" id="nav_about" data-toggle="dropdown" href="#">About Us</a>
 		  <ul class="dropdown-menu" >
 			  <li><a href="/pages/eng/aboutus/about">About</a></li>
 			  <li><a href="/pages/eng/aboutus/services">Services</a></li>
 			  <li><a href="/pages/eng/aboutus/news">News</a></li>
+			  <li><a href="/pages/eng/aboutus/client">Clients</a></li>			  
 		  </ul>
 		</li>
 		<li class="dropdown"><!--行動線上會議 -->
-		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cloudpe-Meet</a>
+		  <a class="dropdown-toggle" id="nav_meet" data-toggle="dropdown" href="#">MEET</a>
 		  <ul class="dropdown-menu">
 			  <li><a href="/pages/eng/Meet/Meet_about" | prepend: site.baseurl ">About Meet</a></li>
 			  <li><a href="/pages/eng/Meet/Meet_features" | prepend: site.baseurl ">Features</a></li>
@@ -59,7 +60,7 @@
 		  </ul>
 		</li>
 		<li class="dropdown"><!--錄播教學系統 -->
-		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cloudpe-Lecture</a>
+		  <a class="dropdown-toggle" id="nav_leture" data-toggle="dropdown" href="#">LECTURE</a>
 		  <ul class="dropdown-menu">
 			  <li><a href="#">About</a></li>
 			  <li><a href="#">MOOC Platform</a></li>
@@ -67,9 +68,9 @@
 			  <li><a href="#">Success Stories</a></li>
 		  </ul>
 		</li>
-        <li ><a href="/pages/eng/contact">Contact Us</a></li><!--聯絡瑩端 -->
+        <li ><a href="/pages/eng/contact">Contact</a></li><!--聯絡瑩端 -->
 		<li class="dropdown"><!--lang_globe -->
-		  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i id="lang_globe"class="fa fa-globe" aria-hidden="true"></i></a><!--globe icon -->
+		  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i id="lang_globe"class="fa fa-globe fa-lg" aria-hidden="true"></i></a><!--globe icon -->
 		  <ul class="dropdown-menu">
 			  <li><a href="/">中文</a></li>
 			  <li><a href="/pages/eng/index">English</a></li>
@@ -123,38 +124,36 @@
   <div class="col-lg-10 text_2col">
 	<div class="col-lg-10">
 	  <h4>Duet PCS MT202</h4>
-	  <p>Phoenix Duet PCS是Duet 產品系列的基本款，不佔空間的輕巧設計，內建專業高質量的麥克風和喇叭，具備先進的迴音消除和雜音抑制技術，且相容於PC或Mac，也無須預先安裝任何驅動程式，隨插即用，為個人揚聲器設備或小型網路電話視訊會議及錄製的完美入門解決方案。</p>
+	  <p>The Duet PCS is a USB desktop speakerphone. It has a built-in microphone and speaker, paired with advanced echo cancellation and noise suppression technologies, making it a very powerful yet portable tabletop VoIP video conferencing solution.</p>
 	</div>
 	<div class="col-lg-10">
 	  <h4>Duet EXE MT202</h4>
-	  <p>Duet EXE是Duet產品系列進階版之一，基本功能與Duet PCS 相同，主要增加串聯功能（Daisy Chain），簡便但功能強大，且利用USB 與數位電話連接及串起三方通話功能，為一滿足簡便經濟-可攜式網路電話視訊會議需求，提供不論是桌上型或是中型視訊會議可擴充式解決方案。</p>
+	  <p>The Duet Executive has same funcions as The Duet PCS + Daisy Chain. It has a built-in microphone and speaker, paired with advanced echo cancellation and noise suppression technologies, making it a very powerful yet portable tabletop VoIP and telephone video conferencing solution.</p>
 	</div>
 	<div class="col-lg-5 ">
-	  <h5 class="bold">功能特色</h5>
+	  <h5 class="bold">Features</h5>
 	  <ul>
-		<li>高品質麥克風（於較大的接收範圍內）</li>
-		<li>內建強有力的喇叭</li>
-		<li>全雙工資料通訊</li>
-		<li>迴音消除</li>
-		<li>噪音抑制</li>
-		<li>自動增益技術（AGC）─穩定音訊</li>
-		<li>USB隨插即用</li>
-		<li>外連擴音喇叭</li>
-		<li>串連能力（daisy chaining-Phoenix獨特技術）</li>
-		<li>耐用鋁合金外殼</li>
-		<li>精美LED燈控制鈕</li>
-		<li>音量調整按鈕</li>
-		<li>靜音按鈕</li>   
+		<li>High quality microphone for large pick-up range</li>
+		<li>High quality microphone for large pick-up range</li>
+		<li>Full duplex communication</li>
+		<li>Echo cancelling</li>
+		<li>Noise suppression</li>
+		<li>Automatic gain control</li>
+		<li>Plug and play</li>
+		<li>External loudspeaker connector</li>
+		<li>Limitless daisy chaining capability</li>
+		<li> Durable aluminum casing</li>
+		<li> LED lit control buttons</li> 
 	  </ul>
 	</div>
 	<div class="col-lg-5">
-	  <h5 class="bold">適用範圍</h5>
+	  <h5 class="bold">Application</h5>
 	  <ul>
-	    <li>提供給小型辦公室／家庭辦公室需求者</li>
-	    <li>個人小空間的視訊會議需求者</li>
-	    <li>移動型視訊會議需求者</li>
-	    <li>小型訓練教室或學校教室</li>
-	    <li>小型至中型會議室</li>
+	    <li>Small offices or home offices</li>
+	    <li>Personal home or dorm room conferencing</li>
+	    <li>Conferencing on the go</li>
+	    <li>Training rooms or class rooms (when daisy chained)</li>
+	    <li>Small to medium conference rooms (when daisy chaining)</li>
 	  </ul>
     </div>
   </div>
@@ -166,7 +165,7 @@
             <div class="col-lg-4">
                 <h4>About</h4>
                 <div class="hline-w"></div>
-                <p>Cloudpe offers education solutions and web conferencing that allows people make presentations and share videos, files and ideas across the globe.</p>
+                <p>Cloudpe offers education and web conferencing solutions that allows people make presentations and share videos, files and ideas across the globe.</p>
             </div>
             <div class="col-lg-4">
                 <h4>Social Links</h4>
@@ -214,7 +213,7 @@
         </div><!--/row -->
 		<div class="hline-w"></div>
     </div><!--/container -->
-	<div class="container centered">
+	<div class="container centered" id="footer_bottom">
         <div class="row">
             <div class="col-lg-4">
 				<ul id="language">
@@ -227,10 +226,10 @@
 				<span id="_copyright">&copy; 2017 Cloudpe Inc. All Rights Reserved</span>
             </div>
             <div class="col-lg-4">
-				<ul class="copyright ">
-					<li><a href="#">Join Us</a></li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li><a href="#">Terms</a></li>
+				<ul class="copyright " id="terms_policy">
+					<li><a href="/pages/career_eng">Career</a></li>
+					<li><a href="/pages/privacy_eng">Privacy Policy</a></li>
+					<li><a href="/pages/terms_eng">Terms</a></li>
 				</ul>
             </div>
         </div><!--/row -->

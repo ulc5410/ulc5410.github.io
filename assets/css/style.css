@@ -86,6 +86,9 @@ a:focus {
 ._right{
 	text-align: right;
 }
+._block{
+	display:block;
+}
 ._inline_block{
 	display:inline-block;
 }
@@ -139,10 +142,13 @@ a:focus {
 
 #_copyright{
 	color: #fff;
-	margin-left:2em;
+	margin-left:-6em;
+}
+#terms_policy{
+	margin-left:-8em;
 }
 #language{
-	margin-left: 0em;
+	margin-left: -14em;
 	color:#fff;
 }
 #language li{
@@ -194,12 +200,24 @@ a:focus {
 	background: #384452;
 }
 
+.dropdown-toggle{
+	text-align:center;
+}
 .dropdown-menu > li > a {
 	color: white;
 	font-weight: 550;
 	font-size: 14px;
 }
-
+/* eng navbar Meet Lecture width */
+#nav_about{
+	min-width:85px;
+}
+#nav_meet{
+	min-width:85px;
+}
+#nav_leture{
+	min-width:110px;
+}
 .btn-theme {
   color: #fff;
   background-color: #384452;
@@ -437,7 +455,9 @@ a:focus {
 #footerwrap i:hover {
 	color: #00b3fe
 }
-
+#footer_bottom{
+	
+}
 /*	################################################################
 	PAGE CONFIGURATIONS
 ################################################################# */
@@ -758,6 +778,43 @@ a.anchor{
 	/* margin-top:16px; */
 	/* margin-right:10px; */
 	padding-left:8px; 
-	color: #00a8ec;
+	color: white;
 	min-width:30px;
+}
+/* table */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    border: solid  ;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(odd){background-color: #f2f2f2}
+tr:first-child{background-color: #00b3fe}
+
+/* clients*/
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
 }

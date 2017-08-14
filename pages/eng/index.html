@@ -42,15 +42,16 @@
       <ul class="nav navbar-nav">
         <!-- <li class="active"><a href="/">首頁</a></li><!--Home --> -->
         <li class="dropdown"> <!--關於瑩端 -->
-		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us</a>
+		  <a class="dropdown-toggle" id="nav_about" data-toggle="dropdown" href="#">About Us</a>
 		  <ul class="dropdown-menu" >
 			  <li><a href="/pages/eng/aboutus/about">About</a></li>
 			  <li><a href="/pages/eng/aboutus/services">Services</a></li>
 			  <li><a href="/pages/eng/aboutus/news">News</a></li>
+			  <li><a href="/pages/eng/aboutus/client">Clients</a></li>			  
 		  </ul>
 		</li>
 		<li class="dropdown"><!--行動線上會議 -->
-		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cloudpe-Meet</a>
+		  <a class="dropdown-toggle" id="nav_meet" data-toggle="dropdown" href="#">MEET</a>
 		  <ul class="dropdown-menu">
 			  <li><a href="/pages/eng/Meet/Meet_about" | prepend: site.baseurl ">About Meet</a></li>
 			  <li><a href="/pages/eng/Meet/Meet_features" | prepend: site.baseurl ">Features</a></li>
@@ -59,7 +60,7 @@
 		  </ul>
 		</li>
 		<li class="dropdown"><!--錄播教學系統 -->
-		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cloudpe-Lecture</a>
+		  <a class="dropdown-toggle" id="nav_leture" data-toggle="dropdown" href="#">LECTURE</a>
 		  <ul class="dropdown-menu">
 			  <li><a href="#">About</a></li>
 			  <li><a href="#">MOOC Platform</a></li>
@@ -67,9 +68,9 @@
 			  <li><a href="#">Success Stories</a></li>
 		  </ul>
 		</li>
-        <li ><a href="/pages/eng/contact">Contact Us</a></li><!--聯絡瑩端 -->
+        <li ><a href="/pages/eng/contact">Contact</a></li><!--聯絡瑩端 -->
 		<li class="dropdown"><!--lang_globe -->
-		  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i id="lang_globe"class="fa fa-globe" aria-hidden="true"></i></a><!--globe icon -->
+		  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i id="lang_globe"class="fa fa-globe fa-lg" aria-hidden="true"></i></a><!--globe icon -->
 		  <ul class="dropdown-menu">
 			  <li><a href="/">中文</a></li>
 			  <li><a href="/pages/eng/index">English</a></li>
@@ -82,15 +83,13 @@
 
             <div id="slideshow">
 	<div class="slideshow-container">
-	  <img class="mySlides slide_fade" src="/assets/img/slideshow/meet_banner.png"  style="width:100%">
-	  <img class="mySlides slide_fade" src="/assets/img/slideshow/lecture_banner.png"  style="width:100%">
-	  <img class="mySlides slide_fade" src="/assets/img/slideshow/ntu_banner.png"  style="width:100%">
+	  <img class="mySlides slide_fade" src="/assets/img/slideshow/meet_banner_eng.png"  style="width:100%">
+	  <img class="mySlides slide_fade" src="/assets/img/slideshow/lecture_banner_eng.png"  style="width:100%">
 	  <a class="prev_slide" onclick="plusSlides(-1)">&#10094;</a>
 	  <a class="next_slide" onclick="plusSlides(1)">&#10095;</a>
 	  <div class="dots">
 	    <span class="dot" onclick="currentSlide(1)"></span>
 	    <span class="dot" onclick="currentSlide(2)"></span>
-	    <span class="dot" onclick="currentSlide(3)"></span>
 	  </div>
 	</div>
 </div> <!-- /slideshow -->
@@ -125,7 +124,7 @@
             <div class="col-lg-4">
                 <h4>About</h4>
                 <div class="hline-w"></div>
-                <p>Cloudpe offers education solutions and web conferencing that allows people make presentations and share videos, files and ideas across the globe.</p>
+                <p>Cloudpe offers education and web conferencing solutions that allows people make presentations and share videos, files and ideas across the globe.</p>
             </div>
             <div class="col-lg-4">
                 <h4>Social Links</h4>
@@ -173,7 +172,7 @@
         </div><!--/row -->
 		<div class="hline-w"></div>
     </div><!--/container -->
-	<div class="container centered">
+	<div class="container centered" id="footer_bottom">
         <div class="row">
             <div class="col-lg-4">
 				<ul id="language">
@@ -186,10 +185,10 @@
 				<span id="_copyright">&copy; 2017 Cloudpe Inc. All Rights Reserved</span>
             </div>
             <div class="col-lg-4">
-				<ul class="copyright ">
-					<li><a href="#">Join Us</a></li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li><a href="#">Terms</a></li>
+				<ul class="copyright " id="terms_policy">
+					<li><a href="/pages/career_eng">Career</a></li>
+					<li><a href="/pages/privacy_eng">Privacy Policy</a></li>
+					<li><a href="/pages/terms_eng">Terms</a></li>
 				</ul>
             </div>
         </div><!--/row -->
