@@ -51,23 +51,23 @@
 		  </ul>
 		</li>
 		<li class="dropdown"><!--行動線上會議 -->
-		  <a class="dropdown-toggle" id="nav_meet" data-toggle="dropdown" href="#">MEET</a>
+		  <a class="dropdown-toggle" id="nav_meet" data-toggle="dropdown" href="#">Cloudpe-Meet</a>
 		  <ul class="dropdown-menu">
 			  <li><a href="/pages/eng/Meet/Meet_about" | prepend: site.baseurl ">About Meet</a></li>
 			  <li><a href="/pages/eng/Meet/Meet_features" | prepend: site.baseurl ">Features</a></li>
 			  <li><a href="/pages/eng/Meet/Meet_scenario" | prepend: site.baseurl ">Scenario</a></li>
-			  <li><a href="/pages/eng/Meet/hardware">Accessories</a></li>
+			  <li><a href="/pages/eng/Meet/Meet_hardware">Accessories</a></li>
 		  </ul>
 		</li>
-		<li class="dropdown"><!--錄播教學系統 -->
-		  <a class="dropdown-toggle" id="nav_leture" data-toggle="dropdown" href="#">LECTURE</a>
-		  <ul class="dropdown-menu">
-			  <li><a href="#">About</a></li>
-			  <li><a href="#">MOOC Platform</a></li>
-			  <li><a href="#">Services</a></li>
-			  <li><a href="#">Success Stories</a></li>
-		  </ul>
-		</li>
+		<!-- <li class="dropdown"><!--錄播教學系統 --> -->
+		  <!-- <a class="dropdown-toggle" id="nav_leture" data-toggle="dropdown" href="#">LECTURE</a> -->
+		  <!-- <ul class="dropdown-menu"> -->
+			  <!-- <li><a href="#">About</a></li> -->
+			  <!-- <li><a href="#">MOOC Platform</a></li> -->
+			  <!-- <li><a href="#">Services</a></li> -->
+			  <!-- <li><a href="#">Success Stories</a></li> -->
+		  <!-- </ul> -->
+		<!-- </li> -->
         <li ><a href="/pages/eng/contact">Contact</a></li><!--聯絡瑩端 -->
 		<li class="dropdown"><!--lang_globe -->
 		  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i id="lang_globe"class="fa fa-globe fa-lg" aria-hidden="true"></i></a><!--globe icon -->
@@ -118,11 +118,6 @@
                 <h4>Social Links</h4>
                 <div class="hline-w"></div>
                 <p>
-                    
-                        <a href="" class="btn-social btn-outline">
-                          <i class="fa fa-dribbble" aria-hidden="true"></i>
-                          <span class="sr-only">dribbble</span>
-                        </a>
                     
                         <a href="" class="btn-social btn-outline">
                           <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -195,86 +190,6 @@
 <script src="/assets/js/slideshow.js"></script>
 
 <script>
-// Portfolio
-(function($) {
-	"use strict";
-	var $container = $('.portfolio'),
-		$items = $container.find('.portfolio-item'),
-		portfolioLayout = 'fitRows';
-		
-		if( $container.hasClass('portfolio-centered') ) {
-			portfolioLayout = 'masonry';
-		}
-				
-		$container.isotope({
-			filter: '*',
-			animationEngine: 'best-available',
-			layoutMode: portfolioLayout,
-			animationOptions: {
-			duration: 750,
-			easing: 'linear',
-			queue: false
-		},
-		masonry: {
-		}
-		}, refreshWaypoints());
-		
-		function refreshWaypoints() {
-			setTimeout(function() {
-			}, 1000);   
-		}
-				
-		$('nav.portfolio-filter ul a').on('click', function() {
-				var selector = $(this).attr('data-filter');
-				$container.isotope({ filter: selector }, refreshWaypoints());
-				$('nav.portfolio-filter ul a').removeClass('active');
-				$(this).addClass('active');
-				return false;
-		});
-		
-		function getColumnNumber() { 
-			var winWidth = $(window).width(), 
-			columnNumber = 1;
-		
-			if (winWidth > 1200) {
-				columnNumber = 5;
-			} else if (winWidth > 950) {
-				columnNumber = 4;
-			} else if (winWidth > 600) {
-				columnNumber = 3;
-			} else if (winWidth > 400) {
-				columnNumber = 2;
-			} else if (winWidth > 250) {
-				columnNumber = 1;
-			}
-				return columnNumber;
-			}       
-			
-			function setColumns() {
-				var winWidth = $(window).width(), 
-				columnNumber = getColumnNumber(), 
-				itemWidth = Math.floor(winWidth / columnNumber);
-				
-				$container.find('.portfolio-item').each(function() { 
-					$(this).css( { 
-					width : itemWidth + 'px' 
-				});
-			});
-		}
-		
-		function setPortfolio() { 
-			setColumns();
-			$container.isotope('reLayout');
-		}
-			
-		$container.imagesLoaded(function () { 
-			setPortfolio();
-		});
-		
-		$(window).on('resize', function () { 
-		setPortfolio();          
-	});
-})(jQuery);
-</script>
+
     </body>
 </html>

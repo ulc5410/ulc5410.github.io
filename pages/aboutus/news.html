@@ -62,16 +62,16 @@
 			  <li><a href="/pages/Meet/Meet_about" | prepend: site.baseurl ">產品簡介</a></li>
 			  <li><a href="/pages/Meet/Meet_features" | prepend: site.baseurl ">功能特色</a></li>
 			  <li><a href="/pages/Meet/Meet_scenario" | prepend: site.baseurl ">應用情境</a></li>
-			  <li><a href="/pages/Meet/hardware">相關硬體</a></li>
+			  <li><a href="/pages/Meet/Meet_hardware">相關硬體</a></li>
 		  </ul>
 		</li>
 		<li class="dropdown"><!--錄播教學系統 -->
 		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">錄播教學系統</a>
 		  <ul class="dropdown-menu">
-			  <li><a href="#">Lecture錄播系統</a></li>
-			  <li><a href="#">MOOC課程平台</a></li>
-			  <li><a href="#">提供服務</a></li>
-			  <li><a href="#">成功案例</a></li>
+			  <li><a href="/pages/Lecture/Lecture_lecture" | prepend: site.baseurl ">Lecture錄播系統</a></li>
+			  <li><a href="/pages/Lecture/Lecture_MOOC" | prepend: site.baseurl ">MOOC課程平台</a></li>
+			  <li><a href="/pages/Lecture/Lecture_service" | prepend: site.baseurl ">提供服務</a></li>
+			  <li><a href="/pages/Lecture/Lecture_story" | prepend: site.baseurl ">成功案例</a></li>
 		  </ul>
 		</li>
         <li ><a href="/pages/contact">聯絡瑩端</a></li><!--聯絡瑩端 -->
@@ -104,7 +104,7 @@
 		瑩端數位股份有限公司與國立臺灣大學計算機及資訊網路中心產學合作成功開發出一套「e化會議管理系統Cloudpe-Meet」，支援多項蓬勃成長的會議與學習需求。
 		國立臺灣大學歷年來作育英才無數，同時也不斷致力於提升行政與教學品質及效率，全校師生在有限的資源下，將研究與教學成果最大最佳化。基於此項需求，臺大計算機及資訊網路中心與瑩端數位股份有限公司合作，共同開發出便利教職員生校內外雲端溝通、會議、教學與協同合作的系統。
 		「e化會議管理系統」包含三個子系統：「會議管理系統」、「視訊會議系統」以及「遠距輔助教學系統」，結合臺大的單一認證系統(SSO)，所有使用者登入後即可使用，不需額外帳密登入；同時也與臺大的雲端儲存空間無縫接軌，讓檔案的分享與存取能夠達成全面自動化的管理目標。
-		<br>網址連結：<a href="https://my.ntu.edu.tw/">https://my.ntu.edu.tw/</a>&nbsp; &nbsp;前往<a href="#">台大新聞稿</a>    
+		<br>網址連結：<a href="https://my.ntu.edu.tw/">https://my.ntu.edu.tw/</a>  
 	  </p>
 	</div>
 	<button onclick="accordion('news4')" class="accordion w3-btn w3-block w3-grey w3-left-align">2015-01-29 平面媒體報導 | 瑩端數位解決方案 犀利</button>
@@ -218,11 +218,6 @@ function accordion(id) {
                 <p>
                     
                         <a href="" class="btn-social btn-outline">
-                          <i class="fa fa-dribbble" aria-hidden="true"></i>
-                          <span class="sr-only">dribbble</span>
-                        </a>
-                    
-                        <a href="" class="btn-social btn-outline">
                           <i class="fa fa-facebook" aria-hidden="true"></i>
                           <span class="sr-only">facebook</span>
                         </a>
@@ -295,86 +290,6 @@ function accordion(id) {
 <script src="/assets/js/slideshow.js"></script>
 
 <script>
-// Portfolio
-(function($) {
-	"use strict";
-	var $container = $('.portfolio'),
-		$items = $container.find('.portfolio-item'),
-		portfolioLayout = 'fitRows';
-		
-		if( $container.hasClass('portfolio-centered') ) {
-			portfolioLayout = 'masonry';
-		}
-				
-		$container.isotope({
-			filter: '*',
-			animationEngine: 'best-available',
-			layoutMode: portfolioLayout,
-			animationOptions: {
-			duration: 750,
-			easing: 'linear',
-			queue: false
-		},
-		masonry: {
-		}
-		}, refreshWaypoints());
-		
-		function refreshWaypoints() {
-			setTimeout(function() {
-			}, 1000);   
-		}
-				
-		$('nav.portfolio-filter ul a').on('click', function() {
-				var selector = $(this).attr('data-filter');
-				$container.isotope({ filter: selector }, refreshWaypoints());
-				$('nav.portfolio-filter ul a').removeClass('active');
-				$(this).addClass('active');
-				return false;
-		});
-		
-		function getColumnNumber() { 
-			var winWidth = $(window).width(), 
-			columnNumber = 1;
-		
-			if (winWidth > 1200) {
-				columnNumber = 5;
-			} else if (winWidth > 950) {
-				columnNumber = 4;
-			} else if (winWidth > 600) {
-				columnNumber = 3;
-			} else if (winWidth > 400) {
-				columnNumber = 2;
-			} else if (winWidth > 250) {
-				columnNumber = 1;
-			}
-				return columnNumber;
-			}       
-			
-			function setColumns() {
-				var winWidth = $(window).width(), 
-				columnNumber = getColumnNumber(), 
-				itemWidth = Math.floor(winWidth / columnNumber);
-				
-				$container.find('.portfolio-item').each(function() { 
-					$(this).css( { 
-					width : itemWidth + 'px' 
-				});
-			});
-		}
-		
-		function setPortfolio() { 
-			setColumns();
-			$container.isotope('reLayout');
-		}
-			
-		$container.imagesLoaded(function () { 
-			setPortfolio();
-		});
-		
-		$(window).on('resize', function () { 
-		setPortfolio();          
-	});
-})(jQuery);
-</script>
+
     </body>
 </html>

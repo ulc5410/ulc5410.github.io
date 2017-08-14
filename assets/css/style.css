@@ -805,9 +805,9 @@ div.gallery {
     width: 180px;
 }
 
-div.gallery:hover {
-    border: 1px solid #777;
-}
+/* div.gallery:hover { */
+    /* border: 1px solid #777; */
+/* } */
 
 div.gallery img {
     width: 100%;
@@ -816,5 +816,23 @@ div.gallery img {
 
 div.desc {
     padding: 15px;
+    border-top: 1px solid #ccc;
     text-align: center;
+}
+
+#lecture_feature{
+    list-style-type: disc;
+
+}
+#lecture_feature> li{
+    float: left;
+    width: 50%;
+}
+#lecture_feature> li> p{
+	padding-right:5px;
+}
+.leture_case_pic{
+    width: 250px;
+    height: auto;
+	margin:10px;
 }

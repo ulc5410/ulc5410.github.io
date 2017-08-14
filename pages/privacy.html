@@ -62,16 +62,16 @@
 			  <li><a href="/pages/Meet/Meet_about" | prepend: site.baseurl ">產品簡介</a></li>
 			  <li><a href="/pages/Meet/Meet_features" | prepend: site.baseurl ">功能特色</a></li>
 			  <li><a href="/pages/Meet/Meet_scenario" | prepend: site.baseurl ">應用情境</a></li>
-			  <li><a href="/pages/Meet/hardware">相關硬體</a></li>
+			  <li><a href="/pages/Meet/Meet_hardware">相關硬體</a></li>
 		  </ul>
 		</li>
 		<li class="dropdown"><!--錄播教學系統 -->
 		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">錄播教學系統</a>
 		  <ul class="dropdown-menu">
-			  <li><a href="#">Lecture錄播系統</a></li>
-			  <li><a href="#">MOOC課程平台</a></li>
-			  <li><a href="#">提供服務</a></li>
-			  <li><a href="#">成功案例</a></li>
+			  <li><a href="/pages/Lecture/Lecture_lecture" | prepend: site.baseurl ">Lecture錄播系統</a></li>
+			  <li><a href="/pages/Lecture/Lecture_MOOC" | prepend: site.baseurl ">MOOC課程平台</a></li>
+			  <li><a href="/pages/Lecture/Lecture_service" | prepend: site.baseurl ">提供服務</a></li>
+			  <li><a href="/pages/Lecture/Lecture_story" | prepend: site.baseurl ">成功案例</a></li>
 		  </ul>
 		</li>
         <li class="active"><a href="/pages/contact">聯絡瑩端</a></li><!--聯絡瑩端 -->
@@ -158,11 +158,6 @@
                 <p>
                     
                         <a href="" class="btn-social btn-outline">
-                          <i class="fa fa-dribbble" aria-hidden="true"></i>
-                          <span class="sr-only">dribbble</span>
-                        </a>
-                    
-                        <a href="" class="btn-social btn-outline">
                           <i class="fa fa-facebook" aria-hidden="true"></i>
                           <span class="sr-only">facebook</span>
                         </a>
@@ -235,86 +230,6 @@
 <script src="/assets/js/slideshow.js"></script>
 
 <script>
-// Portfolio
-(function($) {
-	"use strict";
-	var $container = $('.portfolio'),
-		$items = $container.find('.portfolio-item'),
-		portfolioLayout = 'fitRows';
-		
-		if( $container.hasClass('portfolio-centered') ) {
-			portfolioLayout = 'masonry';
-		}
-				
-		$container.isotope({
-			filter: '*',
-			animationEngine: 'best-available',
-			layoutMode: portfolioLayout,
-			animationOptions: {
-			duration: 750,
-			easing: 'linear',
-			queue: false
-		},
-		masonry: {
-		}
-		}, refreshWaypoints());
-		
-		function refreshWaypoints() {
-			setTimeout(function() {
-			}, 1000);   
-		}
-				
-		$('nav.portfolio-filter ul a').on('click', function() {
-				var selector = $(this).attr('data-filter');
-				$container.isotope({ filter: selector }, refreshWaypoints());
-				$('nav.portfolio-filter ul a').removeClass('active');
-				$(this).addClass('active');
-				return false;
-		});
-		
-		function getColumnNumber() { 
-			var winWidth = $(window).width(), 
-			columnNumber = 1;
-		
-			if (winWidth > 1200) {
-				columnNumber = 5;
-			} else if (winWidth > 950) {
-				columnNumber = 4;
-			} else if (winWidth > 600) {
-				columnNumber = 3;
-			} else if (winWidth > 400) {
-				columnNumber = 2;
-			} else if (winWidth > 250) {
-				columnNumber = 1;
-			}
-				return columnNumber;
-			}       
-			
-			function setColumns() {
-				var winWidth = $(window).width(), 
-				columnNumber = getColumnNumber(), 
-				itemWidth = Math.floor(winWidth / columnNumber);
-				
-				$container.find('.portfolio-item').each(function() { 
-					$(this).css( { 
-					width : itemWidth + 'px' 
-				});
-			});
-		}
-		
-		function setPortfolio() { 
-			setColumns();
-			$container.isotope('reLayout');
-		}
-			
-		$container.imagesLoaded(function () { 
-			setPortfolio();
-		});
-		
-		$(window).on('resize', function () { 
-		setPortfolio();          
-	});
-})(jQuery);
-</script>
+
     </body>
 </html>
