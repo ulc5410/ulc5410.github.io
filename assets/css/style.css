@@ -242,21 +242,20 @@ a:focus {
 	border-color: #ffffff;
 }
 .dmbutton {
-	background:rgba(0, 0, 0, 0);
+	background:#384452;
 	border: 1px solid #ffffff;
-	color: #ffffff;
+	color: #fff;
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
-	padding-top: 1.025rem;
-	padding-right: 2.25rem;
+	padding-top: 0.7rem;
+	padding-right: 1.4rem;
 	letter-spacing:0.85px;
-	padding-bottom: 1.0875rem;
-	padding-left: 2.25rem;
-	font-size: 1.55rem;
+	padding-bottom: 0.7rem;
+	padding-left: 1.4rem;
+	font-size: 1 rem;
 	cursor: pointer;
 	font-weight: normal;
 	line-height: normal;
-	margin: 0 0 1.25rem;
 	text-decoration: none;
 	text-align: center;
 	display: inline-block;
@@ -265,6 +264,9 @@ a:focus {
 	transition: background-color 300ms ease-out;
 	-webkit-appearance: none;
 	font-weight: normal !important;
+}
+.dmbutton > a{
+	color:white;
 }
 /* margin top+bottom */
 .mtb {
@@ -295,8 +297,8 @@ a:focus {
 #slideshow {
 	background-color: #00b3fe;
 	min-height: 0px;
-	padding-top: 100px;
-	padding-bottom: 10px;
+	padding-top: 110px;
+	padding-bottom: 30px;
 	text-align: center;
 }
 
@@ -326,30 +328,6 @@ a:focus {
 	padding: 15px;
 }
 
-/* Portfolio Wrap */
-#portfoliowrap {
-	padding-top: 60px;
-	margin-bottom: 60px;
-	display: block;
-	text-align: center
-}
-
-#portfoliowrap h3 {
-	margin-bottom: 25px;
-}
-
-.portfolio {
-	padding:0 !important;
-	margin:0 !important;
-	display:block;
-}
-
-
-.portfolio-item .title:before {border-radius:0; display:none}
-.portfolio-item p {margin:0px 0 30px;}
-.portfolio-item h3 {margin:-10px 0 10px; font-size:16px; text-transform:uppercase;}
-
-
 .tpl6 h3
 {
 	color:#fff;
@@ -374,61 +352,21 @@ a:focus {
 	text-align:center;
 }
 
-/* Testimonials Wrap */
-#twrapback {
-    background-color: #00b3fe;
-    background-color:rgba(0,179,254,.8);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
-#twrap {
-    background: url(../img/t-back.jpg) no-repeat center top;
-    position: relative;
-    margin-top: 0px;
-	padding-top:60px;
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 450px;
-	width: 100%;
-	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#twrap i {
-	font-size: 50px;
-	color: white;
-	margin-bottom: 25px;
-}
-
-#twrap p {
-	color: white;
-	font-size: 15px;
-	line-height: 30px;
+/* demo wrap */
+#dwrap{
+	background: #fff;
+	margin-top: 0px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 /* clients logo */
 #cwrap {
 	background: #f7f7f7;
 	margin-top: 0px;
-	padding-top: 80px;
-	padding-bottom: 100px;
-}
-
-#cwrap h3 {
-	margin-bottom: 60px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 /* Footer */
@@ -765,8 +703,6 @@ a.anchor{
 	float:center;
 }
 .features_text{
-	/* margin-top:-10px; */
-	/* margin-bottom:-12px; */
 	width:700px;
 	height:180px;
 	padding:40px;
@@ -775,9 +711,6 @@ a.anchor{
 }
 
 #lang_globe{
-	/* margin-top:16px; */
-	/* margin-right:10px; */
-	padding-left:8px; 
 	color: white;
 	min-width:30px;
 }
@@ -835,4 +768,8 @@ div.desc {
     width: 250px;
     height: auto;
 	margin:10px;
+}
+.demo_img{
+	float:left;
+	border: 0.5px solid #f7f7f7;
 }
