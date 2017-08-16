@@ -773,3 +773,26 @@ div.desc {
 	float:left;
 	border: 0.5px solid #f7f7f7;
 }
+
+.slides_btn {
+  position: relative;
+  cursor:pointer;
+  height: 50px;
+  width: 150px;
+  margin: 2 4px;
+  background-color: #EE7700;
+  display: none;
+  transition: background-color 0.6s ease;
+  top: -250px;
+  right: -400px;
+  display:none;
+}
+
+.slides_btn:hover {
+  background-color: #eeaa00;
+}
+.slides_btn > a{
+  text-align:center;
+  color:white;
+  line-height: 50px
+}
