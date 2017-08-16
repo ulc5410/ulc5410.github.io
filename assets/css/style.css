@@ -755,7 +755,6 @@ div.desc {
 
 #lecture_feature{
     list-style-type: disc;
-
 }
 #lecture_feature> li{
     float: left;
@@ -795,4 +794,14 @@ div.desc {
   text-align:center;
   color:white;
   line-height: 50px
+}
+.list_2col{
+    list-style-type: disc;
+}
+.list_2col> li{
+    float: left;
+    width: 50%;
+}
+.list_2col> li> p{
+	margin-right:5px;
 }
